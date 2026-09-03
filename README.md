@@ -65,8 +65,8 @@ Benchmarked conceptually against [CLEAR](https://doi.org/10.1038/s41551-026-0174
 pip install -r requirements.txt
 ```
 
-Raw CheXpert images and the BiomedCLIP image/text embeddings are not included in this repo and must be regenerated separately before either notebook can be run end-to-end — they are not bundled here.
+Raw CheXpert images and the BiomedCLIP image/text embeddings must be regenerated separately before either notebook can be run end-to-end — they are not included in this repo.
 
 ## Hyperparameter sweep
 
-One line: Adam clearly outperformed SGD across every learning rate and L1 setting tried for the binarized variant.
+Adam clearly outperformed SGD across every learning rate and L1 setting tried for the binarized variant.
