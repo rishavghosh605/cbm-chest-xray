@@ -1,0 +1,138 @@
+{
+  "No Finding": [
+    "clear lung fields",
+    "normal cardiac silhouette",
+    "sharp costophrenic angles",
+    "normal mediastinal contour",
+    "no focal opacity",
+    "normal bony thorax",
+    "symmetric lung inflation",
+    "unremarkable chest radiograph"
+  ],
+  "Enlarged Cardiomediastinum": [
+    "widened mediastinal silhouette",
+    "enlarged cardiac contour",
+    "widened superior mediastinum",
+    "mediastinal mass effect",
+    "abnormal aortic contour",
+    "tracheal deviation",
+    "widened vascular pedicle",
+    "loss of mediastinal margins"
+  ],
+  "Cardiomegaly": [
+    "enlarged cardiac silhouette",
+    "increased cardiothoracic ratio",
+    "globular heart shape",
+    "left ventricular enlargement",
+    "prominent cardiac apex",
+    "cardiac border exceeds half thorax width",
+    "biventricular enlargement",
+    "boot shaped heart"
+  ],
+  "Lung Opacity": [
+    "hazy lung opacity",
+    "increased lung density",
+    "airspace opacification",
+    "patchy parenchymal opacity",
+    "obscured vascular markings",
+    "ill defined opacity",
+    "diffuse ground glass opacity",
+    "focal consolidative opacity"
+  ],
+  "Lung Lesion": [
+    "solitary pulmonary nodule",
+    "well circumscribed mass",
+    "cavitary lung lesion",
+    "spiculated nodule margins",
+    "calcified granuloma",
+    "irregular lung mass",
+    "pulmonary nodule with halo",
+    "mass with irregular border"
+  ],
+  "Edema": [
+    "perihilar haziness",
+    "interstitial lung markings",
+    "kerley b lines",
+    "peribronchial cuffing",
+    "bat wing opacity pattern",
+    "vascular redistribution",
+    "diffuse bilateral haziness",
+    "fluid in fissures"
+  ],
+  "Consolidation": [
+    "dense airspace opacity",
+    "air bronchograms",
+    "lobar consolidation",
+    "silhouette sign with heart border",
+    "homogeneous parenchymal opacity",
+    "segmental consolidation",
+    "confluent airspace disease"
+  ],
+  "Pneumonia": [
+    "focal airspace consolidation",
+    "air bronchograms",
+    "lobar infiltrate",
+    "patchy infiltrate",
+    "peribronchial infiltrate",
+    "unilateral lung infiltrate",
+    "round pneumonia opacity"
+  ],
+  "Atelectasis": [
+    "volume loss in lung",
+    "elevated hemidiaphragm",
+    "shifted fissure",
+    "linear atelectatic bands",
+    "crowded bronchovascular markings",
+    "mediastinal shift toward opacity",
+    "platelike atelectasis",
+    "collapsed lung segment"
+  ],
+  "Pneumothorax": [
+    "visceral pleural line",
+    "absent lung markings peripherally",
+    "deep sulcus sign",
+    "lucent area without vessels",
+    "collapsed lung edge",
+    "mediastinal shift away from lucency",
+    "tension pneumothorax with shift",
+    "small apical lucency"
+  ],
+  "Pleural Effusion": [
+    "blunted costophrenic angle",
+    "meniscus sign",
+    "layering fluid on lateral view",
+    "hazy hemithorax",
+    "fluid tracking into fissure",
+    "large pleural fluid collection",
+    "subpulmonic effusion",
+    "mediastinal shift from large effusion"
+  ],
+  "Pleural Other": [
+    "pleural thickening",
+    "pleural plaque",
+    "calcified pleura",
+    "loculated pleural fluid",
+    "pleural scarring",
+    "fibrothorax",
+    "pleural based mass"
+  ],
+  "Fracture": [
+    "rib cortical discontinuity",
+    "displaced bone fragment",
+    "callus formation",
+    "step off in bone cortex",
+    "clavicle fracture line",
+    "vertebral compression deformity",
+    "acute rib fracture"
+  ],
+  "Support Devices": [
+    "endotracheal tube",
+    "central venous catheter",
+    "chest tube",
+    "nasogastric tube",
+    "pacemaker leads",
+    "sternotomy wires",
+    "picc line",
+    "tracheostomy tube"
+  ]
+}

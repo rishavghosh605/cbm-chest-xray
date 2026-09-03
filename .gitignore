@@ -1,0 +1,12 @@
+*.npy
+*.pt
+*.pth
+mlflow.db
+archive*.zip
+CheXpert*/
+checkpoints/
+keepsake/
+.ipynb_checkpoints/
+venv/
+.venv/
+__pycache__/
