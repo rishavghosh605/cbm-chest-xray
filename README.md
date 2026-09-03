@@ -44,6 +44,11 @@ The shared linear probe trained at a fixed learning rate for a hardcoded 100 epo
 ![AUROC comparison across concept encodings](figures/auroc_comparison.png)
 *(regenerate with `python figures/generate_auroc_comparison.py`)*
 
+The gap is visible directly in the training logs — the binarized variant plateaus by epoch 100, while both continuous variants are still climbing:
+
+![Validation AUROC vs. epoch, showing under-training at the original 100-epoch budget](figures/convergence_curves.png)
+*(regenerate with `python figures/generate_convergence_curves.py`)*
+
 Both continuous variants now beat the raw-embedding baseline — an accuracy *gain* from the bottleneck, not the usual interpretability-for-accuracy tradeoff.
 
 ## Where this sits
