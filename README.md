@@ -1,12 +1,14 @@
 # cbm-chest-xray
 
-Can a hand-curated, small radiology vocabulary and an off-the-shelf biomedical vision-language model (BiomedCLIP) build an interpretable concept-bottleneck chest X-ray classifier, without training a custom encoder, and how far does that get you versus a black-box baseline?
+Can a hand-curated, small radiology vocabulary and an off-the-shelf biomedical vision-language model (BiomedCLIP) build an interpretable concept-bottleneck chest X-ray classifier, without training a custom encoder — and how close does that get to a plain linear probe on the same frozen embeddings, with no concept layer at all?
 
 **Status:** live, ongoing project. Confirmed: the training-budget fix below and the resulting ranking flip — verified in-notebook (`02_cbm_pipeline.ipynb` has the corrected outputs saved) and independently via a converged `sklearn.LogisticRegression` re-fit on the same concept matrices. Open: this is a ~10K-row subsample for fast iteration, not yet validated at full dataset scale or on an external test set.
 
+**Main finding:** on this subsample, continuous concept scores paired with a properly-converged linear probe outperformed both the binarized concept bottleneck and the raw-embedding baseline. Preliminary — not yet validated across seeds, at full scale, or on external data.
+
 ## Motivation
 
-A concept bottleneck model (CBM) predicts a label from a small set of human-interpretable concept scores instead of a raw embedding — transparent, at some capacity cost. The question here: does a cheap version of this (~95 hand-curated radiology concepts, scored via off-the-shelf BiomedCLIP, no custom pretraining) preserve enough signal to be worth the bottleneck, or does it just throw information away?
+A concept bottleneck model (CBM) predicts a label from a small set of human-interpretable concept scores instead of a raw embedding — transparent, at some capacity cost. The question here: does a lightweight version of this (~95 hand-curated radiology concepts, scored via off-the-shelf BiomedCLIP, no custom pretraining) preserve enough signal to be worth the bottleneck, or does it just throw information away?
 
 ## Method
 
@@ -49,7 +51,7 @@ The gap is visible directly in the training logs — the binarized variant plate
 ![Validation AUROC vs. epoch, showing under-training at the original 100-epoch budget](figures/convergence_curves.png)
 *(regenerate with `python figures/generate_convergence_curves.py`)*
 
-Both continuous variants now beat the raw-embedding baseline — an accuracy *gain* from the bottleneck, not the usual interpretability-for-accuracy tradeoff.
+On this split, both continuous variants beat the raw-embedding baseline — the bottleneck didn't cost accuracy here, reversing the usual interpretability-for-accuracy tradeoff. One split, though; see Limitations.
 
 ## Limitations
 
