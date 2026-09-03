@@ -51,6 +51,10 @@ The gap is visible directly in the training logs — the binarized variant plate
 
 Both continuous variants now beat the raw-embedding baseline — an accuracy *gain* from the bottleneck, not the usual interpretability-for-accuracy tradeoff.
 
+## Limitations
+
+Single train/val/test split — results aren't averaged over multiple seeds, so the AUROC differences between the two continuous variants (0.6809 vs. 0.6795) are within likely noise. Evaluated on a ~10K-row subsample of CheXpert for fast iteration, not the full dataset, and not on an external test set. No formal confidence intervals are reported.
+
 ## Where this sits
 
 Benchmarked conceptually against [CLEAR](https://doi.org/10.1038/s41551-026-01741-4) (Han et al., *Nature Biomedical Engineering*, 2026), a much larger purpose-built system trained on 873K CXR-specific image-report pairs with a ~368K-concept bank, reaching 87.0% AUROC. This project is the small-scale, reproducible, off-the-shelf point in the same design space — not a competitor on raw performance.
