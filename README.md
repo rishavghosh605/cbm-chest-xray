@@ -42,6 +42,7 @@ The shared linear probe trained at a fixed learning rate for a hardcoded 100 epo
 | Binarized (K-means) | 0.6033 |
 
 ![AUROC comparison across concept encodings](figures/auroc_comparison.png)
+*(regenerate with `python figures/generate_auroc_comparison.py`)*
 
 Both continuous variants now beat the raw-embedding baseline — an accuracy *gain* from the bottleneck, not the usual interpretability-for-accuracy tradeoff.
 
