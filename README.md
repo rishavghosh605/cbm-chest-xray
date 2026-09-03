@@ -65,7 +65,7 @@ Benchmarked conceptually against [CLEAR](https://doi.org/10.1038/s41551-026-0174
 pip install -r requirements.txt
 ```
 
-Raw CheXpert images and the BiomedCLIP checkpoint must be downloaded separately before either notebook can be run end-to-end — see [PREREQUISITES.md](PREREQUISITES.md) for exact steps, or run `bash scripts/download_data.sh` from `notebooks/` directly.
+Raw CheXpert images and the BiomedCLIP checkpoint must be downloaded separately before either notebook can be run end-to-end — see [PREREQUISITES.md](PREREQUISITES.md) for exact steps, or run `bash scripts/download_data.sh` from `notebooks/` directly. CheXpert is pulled from the [`danjacobellis/chexpert`](https://huggingface.co/datasets/danjacobellis/chexpert) Hugging Face mirror, not Stanford's gated release.
 
 ## Hyperparameter sweep
 
